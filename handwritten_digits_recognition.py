@@ -5,7 +5,6 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-print("Welcome to the NeuralNine (c) Handwritten Digits Recognition v0.1")
 
 # Decide if to load an existing model or to train a new one
 train_new_model = True
@@ -60,3 +59,4 @@ while os.path.isfile('digits/digit{}.png'.format(image_number)):
     except:
         print("Error reading image! Proceeding with next image...")
         image_number += 1
+
